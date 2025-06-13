@@ -6,6 +6,10 @@ android {
     namespace 'com.example.lab6'
     compileSdk 35
 
+    viewBinding {
+        enabled = true
+    }
+
     defaultConfig {
         applicationId "com.example.lab6"
         minSdk 31
@@ -40,10 +44,8 @@ dependencies {
 
     // Firebase Authentication
     implementation 'com.google.firebase:firebase-auth'
-
     // FirebaseUI Authentication (versión más reciente)
     implementation 'com.firebaseui:firebase-ui-auth:8.0.2'
-
     // Google Play Services Auth (necesario para Google Sign-In)
     implementation 'com.google.android.gms:play-services-auth:20.7.0'
 
@@ -51,7 +53,16 @@ dependencies {
     implementation platform('com.google.firebase:firebase-bom:31.4.0')
     implementation 'com.google.firebase:firebase-firestore'
     implementation 'com.google.firebase:firebase-auth'
+    implementation 'com.github.PhilJay:MPAndroidChart:v3.1.0'
+    implementation 'androidx.appcompat:appcompat:1.6.1'
+    implementation 'com.google.android.material:material:1.9.0'
+    implementation 'com.google.firebase:firebase-auth:22.1.1'
+    implementation 'com.google.firebase:firebase-firestore:24.8.1'
+    implementation 'com.firebaseui:firebase-ui-auth:8.0.2'
+    implementation 'com.github.PhilJay:MPAndroidChart:v3.1.0'
+
 }
+
 
 
 

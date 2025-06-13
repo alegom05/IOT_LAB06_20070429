@@ -19,5 +19,12 @@ dependencyResolutionManagement {
     }
 }
 
+allprojects {
+    repositories {
+        google()
+        mavenCentral()
+    }
+}
+
 rootProject.name = "lab6"
 include ':app'
